@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		3B3822A427346F1300610645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3822A327346F1300610645 /* LaunchScreen.storyboard */; };
 		3B3822A9273470F500610645 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B3822AB273470F500610645 /* Localizable.strings */; };
+		3B3822AD2734729D00610645 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822AC2734729D00610645 /* LoginViewController.swift */; };
+		3B3822AF273472C900610645 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822AE273472C900610645 /* LoginView.swift */; };
+		3B3822B1273472F100610645 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B0273472F100610645 /* Extensions.swift */; };
+		3B3822B42734732F00610645 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B32734732F00610645 /* Animator.swift */; };
+		3B3822B6273473F400610645 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B5273473F400610645 /* LoginDelegate.swift */; };
 		3BF1ABDD272ACFDA002EB459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */; };
 		3BF1ABDF272ACFDA002EB459 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */; };
 		3BF1ABE1272ACFDA002EB459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABE0272ACFDA002EB459 /* ViewController.swift */; };
@@ -41,6 +46,11 @@
 		16666659E11419251C7F7329 /* Pods-FindMyMasters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyMasters.debug.xcconfig"; path = "Target Support Files/Pods-FindMyMasters/Pods-FindMyMasters.debug.xcconfig"; sourceTree = "<group>"; };
 		3B3822A327346F1300610645 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B3822AA273470F500610645 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3B3822AC2734729D00610645 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B3822AE273472C900610645 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3B3822B0273472F100610645 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3B3822B32734732F00610645 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		3B3822B5273473F400610645 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
 		3BF1ABD9272ACFDA002EB459 /* FindMyMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +104,7 @@
 		3B38229D27346DA300610645 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3B3822B5273473F400610645 /* LoginDelegate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 		3B38229F27346DC700610645 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3B3822AC2734729D00610645 /* LoginViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -117,6 +129,8 @@
 		3B3822A027346DD700610645 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				3B3822AE273472C900610645 /* LoginView.swift */,
+				3B3822B22734732F00610645 /* TransitionAnimator */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -134,6 +148,7 @@
 		3B3822A227346DEF00610645 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3B3822B0273472F100610645 /* Extensions.swift */,
 				3B3822A5273470A400610645 /* Generated */,
 				3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */,
 				3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */,
@@ -154,6 +169,14 @@
 				3B3822AB273470F500610645 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		3B3822B22734732F00610645 /* TransitionAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				3B3822B32734732F00610645 /* Animator.swift */,
+			);
+			path = TransitionAnimator;
 			sourceTree = "<group>";
 		};
 		3BF1ABD0272ACFDA002EB459 = {
@@ -395,7 +418,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BF1ABE1272ACFDA002EB459 /* ViewController.swift in Sources */,
+				3B3822B1273472F100610645 /* Extensions.swift in Sources */,
+				3B3822B6273473F400610645 /* LoginDelegate.swift in Sources */,
+				3B3822AD2734729D00610645 /* LoginViewController.swift in Sources */,
 				3BF1ABDD272ACFDA002EB459 /* AppDelegate.swift in Sources */,
+				3B3822AF273472C900610645 /* LoginView.swift in Sources */,
+				3B3822B42734732F00610645 /* Animator.swift in Sources */,
 				3BF1ABDF272ACFDA002EB459 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

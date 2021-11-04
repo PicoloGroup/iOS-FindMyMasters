@@ -27,18 +27,21 @@ class LoginView: UIView {
     lazy var loginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Login", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.highlightedLabel, for: .highlighted)
-        button.setBackgroundImage(UIColor.systemOrange.image, for: .normal)
-        button.setBackgroundImage(UIColor.systemOrange.highlighted.image, for: .highlighted)
+
+        button.setBackgroundImage(Asset.Colors.primaryColor.color.image, for: .normal)
+        button.setBackgroundImage(Asset.Colors.primaryColor.color.highlighted.image, for: .highlighted)
         button.clipsToBounds = true
-        button.layer.cornerRadius = 14
+        button.layer.cornerRadius = 13
         return button
     }()
 
     lazy var createAccountButton: UIButton = {
         let button = UIButton()
         button.setTitle("Create Account", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
         button.setTitleColor(.secondaryLabel, for: .normal)
         button.setTitleColor(UIColor.secondaryLabel.highlighted, for: .highlighted)
         return button
@@ -55,16 +58,15 @@ class LoginView: UIView {
         backgroundColor = .systemBackground
         clipsToBounds = true
 
-        setupFirebaseLogoImage()
+        setupLogoImage()
         setupEmailTextfield()
         setupPasswordTextField()
         setupLoginButton()
         setupCreateAccountButton()
     }
 
-    private func setupFirebaseLogoImage() {
-        let firebaseLogo = UIImage(named: "firebaseLogo")
-        let imageView = UIImageView(image: firebaseLogo)
+    private func setupLogoImage() {
+        let imageView = UIImageView(image: Asset.AppIcons.appIconNoBackground.image)
         imageView.contentMode = .scaleAspectFit
         addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -137,7 +139,7 @@ class LoginView: UIView {
                 equalTo: safeAreaLayoutGuide.trailingAnchor,
                 constant: -15
             ),
-            loginButton.heightAnchor.constraint(equalToConstant: 45),
+            loginButton.heightAnchor.constraint(equalToConstant: 44),
             loginButton.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 5),
         ])
     }
@@ -158,7 +160,7 @@ class LoginView: UIView {
         textfield.backgroundColor = .secondarySystemBackground
         textfield.layer.cornerRadius = 14
         textfield.placeholder = placeholder
-        textfield.tintColor = .systemOrange
+        textfield.tintColor = Asset.Colors.primaryColor.color
         let symbol = UIImage(systemName: symbolName)
         textfield.setImage(symbol)
         return textfield

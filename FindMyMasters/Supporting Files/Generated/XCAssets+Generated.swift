@@ -21,6 +21,10 @@ internal typealias AssetImageTypeAlias = ImageAsset.Image
 
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
+  internal enum AppIcons {
+    internal static let appIconNoBackground = ImageAsset(name: "app-icon-no-background")
+    internal static let appIconRounded = ImageAsset(name: "app-icon-rounded")
+  }
   internal enum Colors {
     internal static let accentColor = ColorAsset(name: "AccentColor")
     internal static let primaryColor = ColorAsset(name: "PrimaryColor")
@@ -30,7 +34,6 @@ internal enum Asset {
     internal static let pencil = ImageAsset(name: "pencil")
     internal static let target = ImageAsset(name: "target")
   }
-  internal static let appIconRounded = ImageAsset(name: "app-icon-rounded")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

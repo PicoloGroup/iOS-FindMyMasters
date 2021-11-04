@@ -14,6 +14,10 @@
 		3B3822B1273472F100610645 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B0273472F100610645 /* Extensions.swift */; };
 		3B3822B42734732F00610645 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B32734732F00610645 /* Animator.swift */; };
 		3B3822B6273473F400610645 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B5273473F400610645 /* LoginDelegate.swift */; };
+		3B3822BB273478B100610645 /* XCAssets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B7273478B100610645 /* XCAssets+Generated.swift */; };
+		3B3822BC273478B100610645 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B8273478B100610645 /* Strings+Generated.swift */; };
+		3B3822BD273478B100610645 /* IB-Segues+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822B9273478B100610645 /* IB-Segues+Generated.swift */; };
+		3B3822BE273478B100610645 /* IB-Scenes+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3822BA273478B100610645 /* IB-Scenes+Generated.swift */; };
 		3BF1ABDD272ACFDA002EB459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */; };
 		3BF1ABDF272ACFDA002EB459 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */; };
 		3BF1ABE1272ACFDA002EB459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABE0272ACFDA002EB459 /* ViewController.swift */; };
@@ -51,6 +55,10 @@
 		3B3822B0273472F100610645 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3B3822B32734732F00610645 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		3B3822B5273473F400610645 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDelegate.swift; sourceTree = "<group>"; };
+		3B3822B7273478B100610645 /* XCAssets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCAssets+Generated.swift"; sourceTree = "<group>"; };
+		3B3822B8273478B100610645 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		3B3822B9273478B100610645 /* IB-Segues+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IB-Segues+Generated.swift"; sourceTree = "<group>"; };
+		3B3822BA273478B100610645 /* IB-Scenes+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IB-Scenes+Generated.swift"; sourceTree = "<group>"; };
 		3BF1ABD9272ACFDA002EB459 /* FindMyMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,10 +156,10 @@
 		3B3822A227346DEF00610645 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B3822B0273472F100610645 /* Extensions.swift */,
 				3B3822A5273470A400610645 /* Generated */,
 				3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */,
 				3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */,
+				3B3822B0273472F100610645 /* Extensions.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -159,6 +167,10 @@
 		3B3822A5273470A400610645 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				3B3822BA273478B100610645 /* IB-Scenes+Generated.swift */,
+				3B3822B9273478B100610645 /* IB-Segues+Generated.swift */,
+				3B3822B8273478B100610645 /* Strings+Generated.swift */,
+				3B3822B7273478B100610645 /* XCAssets+Generated.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -208,8 +220,8 @@
 				3B38229F27346DC700610645 /* View Controllers */,
 				3B38229D27346DA300610645 /* Models */,
 				3B3822A027346DD700610645 /* Custom Views */,
-				3B3822A227346DEF00610645 /* Supporting Files */,
 				3B3822A127346DE700610645 /* Resources */,
+				3B3822A227346DEF00610645 /* Supporting Files */,
 				3BF1ABE0272ACFDA002EB459 /* ViewController.swift */,
 			);
 			path = FindMyMasters;
@@ -417,6 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3822BC273478B100610645 /* Strings+Generated.swift in Sources */,
+				3B3822BB273478B100610645 /* XCAssets+Generated.swift in Sources */,
 				3BF1ABE1272ACFDA002EB459 /* ViewController.swift in Sources */,
 				3B3822B1273472F100610645 /* Extensions.swift in Sources */,
 				3B3822B6273473F400610645 /* LoginDelegate.swift in Sources */,
@@ -425,6 +439,8 @@
 				3B3822AF273472C900610645 /* LoginView.swift in Sources */,
 				3B3822B42734732F00610645 /* Animator.swift in Sources */,
 				3BF1ABDF272ACFDA002EB459 /* SceneDelegate.swift in Sources */,
+				3B3822BD273478B100610645 /* IB-Segues+Generated.swift in Sources */,
+				3B3822BE273478B100610645 /* IB-Scenes+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,7 +619,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WXV9WLK4Q4;
-				INFOPLIST_FILE = "FindMyMasters/Supporting Files/Info.plist";
+				INFOPLIST_FILE = FindMyMasters/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,7 +639,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WXV9WLK4Q4;
-				INFOPLIST_FILE = "FindMyMasters/Supporting Files/Info.plist";
+				INFOPLIST_FILE = FindMyMasters/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

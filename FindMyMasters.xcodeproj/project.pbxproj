@@ -15,6 +15,7 @@
 		3BF1ABE9272ACFDC002EB459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1ABE7272ACFDC002EB459 /* LaunchScreen.storyboard */; };
 		3BF1ABF4272ACFDD002EB459 /* FindMyMastersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABF3272ACFDD002EB459 /* FindMyMastersTests.swift */; };
 		3BF1ABFF272ACFDD002EB459 /* FindMyMastersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABFE272ACFDD002EB459 /* FindMyMastersUITests.swift */; };
+		B35F6F1D0DD7FE7AEFE0650A /* Pods_FindMyMasters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CADA1648C65FC64136F4D4 /* Pods_FindMyMasters.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A148D162C3B26BB117201A3 /* Pods-FindMyMasters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyMasters.release.xcconfig"; path = "Target Support Files/Pods-FindMyMasters/Pods-FindMyMasters.release.xcconfig"; sourceTree = "<group>"; };
+		16666659E11419251C7F7329 /* Pods-FindMyMasters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyMasters.debug.xcconfig"; path = "Target Support Files/Pods-FindMyMasters/Pods-FindMyMasters.debug.xcconfig"; sourceTree = "<group>"; };
 		3BF1ABD9272ACFDA002EB459 /* FindMyMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		3BF1ABFA272ACFDD002EB459 /* FindMyMastersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyMastersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF1ABFE272ACFDD002EB459 /* FindMyMastersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyMastersUITests.swift; sourceTree = "<group>"; };
 		3BF1AC00272ACFDD002EB459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7CADA1648C65FC64136F4D4 /* Pods_FindMyMasters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyMasters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35F6F1D0DD7FE7AEFE0650A /* Pods_FindMyMasters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13DAAE4C676733C4B1B8F4C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7CADA1648C65FC64136F4D4 /* Pods_FindMyMasters.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3BF1ABD0272ACFDA002EB459 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,8 @@
 				3BF1ABF2272ACFDD002EB459 /* FindMyMastersTests */,
 				3BF1ABFD272ACFDD002EB459 /* FindMyMastersUITests */,
 				3BF1ABDA272ACFDA002EB459 /* Products */,
+				C929A7E7044C39AEB38E32D8 /* Pods */,
+				13DAAE4C676733C4B1B8F4C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,16 @@
 			path = FindMyMastersUITests;
 			sourceTree = "<group>";
 		};
+		C929A7E7044C39AEB38E32D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16666659E11419251C7F7329 /* Pods-FindMyMasters.debug.xcconfig */,
+				0A148D162C3B26BB117201A3 /* Pods-FindMyMasters.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF1AC03272ACFDD002EB459 /* Build configuration list for PBXNativeTarget "FindMyMasters" */;
 			buildPhases = (
+				1F64CC6AEADA4F982D1B3821 /* [CP] Check Pods Manifest.lock */,
 				3BF1ABD5272ACFDA002EB459 /* Sources */,
 				3BF1ABD6272ACFDA002EB459 /* Frameworks */,
 				3BF1ABD7272ACFDA002EB459 /* Resources */,
+				0E675E040E7FE2F80925FFF9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +279,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E675E040E7FE2F80925FFF9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindMyMasters/Pods-FindMyMasters-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindMyMasters/Pods-FindMyMasters-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindMyMasters/Pods-FindMyMasters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F64CC6AEADA4F982D1B3821 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyMasters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BF1ABD5272ACFDA002EB459 /* Sources */ = {
@@ -433,6 +502,7 @@
 		};
 		3BF1AC04272ACFDD002EB459 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16666659E11419251C7F7329 /* Pods-FindMyMasters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +522,7 @@
 		};
 		3BF1AC05272ACFDD002EB459 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A148D162C3B26BB117201A3 /* Pods-FindMyMasters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

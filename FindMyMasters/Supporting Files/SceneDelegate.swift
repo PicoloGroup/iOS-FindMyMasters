@@ -8,15 +8,42 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
 
+    lazy var loginNavController: UINavigationController = {
+        let navController = UINavigationController(rootViewController: LoginViewController())
+        navController.view.backgroundColor = .systemBackground
+        return navController
+    }()
 
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+    lazy var tabBarController: UITabBarController = {
+        let tabBarController = UITabBarController()
+        tabBarController.delegate = tabBarController
+        tabBarController.view.backgroundColor = .systemBackground
+        return tabBarController
+    }()
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
+               options connectionOptions: UIScene.ConnectionOptions)
+    {
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        configureControllers()
+
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = loginNavController
+        window?.makeKeyAndVisible()
+    }
+
+    // MARK: - Private Helpers
+
+    private func configureControllers() {
+//        authNavController.configureTabBar(
+//            title: "Authentication",
+//            systemImageName: "person.crop.circle.fill.badge.plus"
+//        )
+//        userNavController.configureTabBar(title: "Current User", systemImageName: "person.fill")
+//        tabBarController.viewControllers = [loginNavController, userNavController]
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -46,7 +73,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
 }
-

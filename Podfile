@@ -14,7 +14,7 @@ target 'FindMyMasters' do
   pod 'PKHUD'
 
   # custom UI
-  pod 'Eureka'
+  #pod 'Eureka'
   pod 'FlagKit'
   pod 'Parchment'
 
@@ -24,6 +24,7 @@ target 'FindMyMasters' do
 
   # Data
   pod 'IGListKit'
+  pod 'Moya'
 
   # Debug
   #pod 'FLEX', :configurations => ['Debug']

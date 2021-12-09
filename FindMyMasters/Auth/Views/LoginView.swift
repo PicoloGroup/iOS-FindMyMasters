@@ -29,7 +29,7 @@ class LoginView: UIView {
         button.setTitle("Login", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         button.setTitleColor(.white, for: .normal)
-        button.setTitleColor(.highlightedLabel, for: .highlighted)
+        button.setTitleColor(.lightGray, for: .highlighted)
 
         button.setBackgroundImage(Asset.Colors.primaryColor.color.image, for: .normal)
         button.setBackgroundImage(Asset.Colors.primaryColor.color.highlighted.image, for: .highlighted)
@@ -43,7 +43,7 @@ class LoginView: UIView {
         button.setTitle("Create Account", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         button.setTitleColor(Asset.Colors.primaryColor.color, for: .normal)
-        button.setTitleColor(.highlightedLabel, for: .highlighted)
+        button.setTitleColor(.gray, for: .highlighted)
 
         button.layer.borderColor = Asset.Colors.primaryColor.color.cgColor
         button.layer.borderWidth = 1

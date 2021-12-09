@@ -25,7 +25,7 @@ extension FindAPI: TargetType, AccessTokenAuthorizable {
         return .bearer
     }
 
-    public var baseURL: URL { URL(string: "http://findmymasters-api.eu-central-1.elasticbeanstalk.com/auth/student")! }
+    public var baseURL: URL { URL(string: "\(Environment.findMyMastersAPIBaseURL)/auth/student")! }
 
     public var path: String {
         switch self {

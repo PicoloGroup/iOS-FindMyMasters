@@ -1,0 +1,14 @@
+//
+//  Debug.xcconfig
+//  FindMyMasters
+//
+//  Created by Hasan Can Aslan on 9.12.2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-FindMyMasters/Pods-FindMyMasters.debug.xcconfig"
+
+APP_NAME = FMM (dev)
+API_BASE_URL = http:#()localhost:3000

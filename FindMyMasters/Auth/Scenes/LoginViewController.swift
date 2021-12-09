@@ -66,6 +66,18 @@ class LoginViewController: UIViewController {
 //            guard error == nil else { return self.displayError(error) }
 //            self.delegate?.loginDidOccur()
 //        }
+
+       let authProvider = APIProviders.shared.authProvider
+        authProvider.request(.signup(email, password)) { result in
+            Log.debug(result)
+
+            switch result {
+            case let .success(response):
+                Log.debug(response)
+            case let .failure(response):
+                Log.debug(response)
+            }
+        }
     }
 
     // MARK: - Action Handlers

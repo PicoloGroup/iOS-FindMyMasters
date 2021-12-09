@@ -24,6 +24,7 @@
 		3BE1A6F12762263B00DEBE8E /* APIProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1A6F02762263A00DEBE8E /* APIProviders.swift */; };
 		3BE1A70027624EE600DEBE8E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1A6FF27624EE600DEBE8E /* Logger.swift */; };
 		3BE1A70227624F3200DEBE8E /* UserDefaultsBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1A70127624F3200DEBE8E /* UserDefaultsBacked.swift */; };
+		3BE1A70527626C4700DEBE8E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1A70427626C4700DEBE8E /* Environment.swift */; };
 		3BF1ABDD272ACFDA002EB459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */; };
 		3BF1ABDF272ACFDA002EB459 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */; };
 		3BF1ABE1272ACFDA002EB459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABE0272ACFDA002EB459 /* ViewController.swift */; };
@@ -71,6 +72,9 @@
 		3BE1A6F02762263A00DEBE8E /* APIProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviders.swift; sourceTree = "<group>"; };
 		3BE1A6FF27624EE600DEBE8E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		3BE1A70127624F3200DEBE8E /* UserDefaultsBacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsBacked.swift; sourceTree = "<group>"; };
+		3BE1A70427626C4700DEBE8E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3BE1A70627626D8F00DEBE8E /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		3BE1A70727626D9F00DEBE8E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		3BF1ABD9272ACFDA002EB459 /* FindMyMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 		3BE1A6F3276249BB00DEBE8E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3BE1A70327626C2E00DEBE8E /* Config */,
 				3BE1A6FC27624BF900DEBE8E /* Views */,
 				3B38229E27346DB500610645 /* Scenes */,
 				3B38229D27346DA300610645 /* Models */,
@@ -246,9 +251,9 @@
 		3BE1A6F5276249E000DEBE8E /* Find */ = {
 			isa = PBXGroup;
 			children = (
-				3BE1A6FB27624A8700DEBE8E /* Services */,
 				3BE1A6FA27624A5C00DEBE8E /* Scenes */,
 				3BE1A6F827624A4C00DEBE8E /* Views */,
+				3BE1A6FB27624A8700DEBE8E /* Services */,
 			);
 			path = Find;
 			sourceTree = "<group>";
@@ -290,6 +295,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3BE1A70327626C2E00DEBE8E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1A70427626C4700DEBE8E /* Environment.swift */,
+				3BE1A70627626D8F00DEBE8E /* Debug.xcconfig */,
+				3BE1A70727626D9F00DEBE8E /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		3BF1ABD0272ACFDA002EB459 = {
 			isa = PBXGroup;
 			children = (
@@ -318,9 +333,9 @@
 				3BE1A6F3276249BB00DEBE8E /* Core */,
 				3BE1A6F4276249D600DEBE8E /* Auth */,
 				3BE1A6F5276249E000DEBE8E /* Find */,
+				3BF1ABE0272ACFDA002EB459 /* ViewController.swift */,
 				3B3822A127346DE700610645 /* Resources */,
 				3B3822A227346DEF00610645 /* Supporting Files */,
-				3BF1ABE0272ACFDA002EB459 /* ViewController.swift */,
 			);
 			path = FindMyMasters;
 			sourceTree = "<group>";
@@ -542,6 +557,7 @@
 				3B3822AF273472C900610645 /* LoginView.swift in Sources */,
 				3B8E3F36274D2D40003DCC48 /* AuthAPI.swift in Sources */,
 				3B3822B42734732F00610645 /* Animator.swift in Sources */,
+				3BE1A70527626C4700DEBE8E /* Environment.swift in Sources */,
 				3BF1ABDF272ACFDA002EB459 /* SceneDelegate.swift in Sources */,
 				3B3822BD273478B100610645 /* IB-Segues+Generated.swift in Sources */,
 				3B3822BE273478B100610645 /* IB-Scenes+Generated.swift in Sources */,
@@ -717,7 +733,7 @@
 		};
 		3BF1AC04272ACFDD002EB459 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16666659E11419251C7F7329 /* Pods-FindMyMasters.debug.xcconfig */;
+			baseConfigurationReference = 3BE1A70627626D8F00DEBE8E /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -737,7 +753,7 @@
 		};
 		3BF1AC05272ACFDD002EB459 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A148D162C3B26BB117201A3 /* Pods-FindMyMasters.release.xcconfig */;
+			baseConfigurationReference = 3BE1A70727626D9F00DEBE8E /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -125,30 +125,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3B38229E27346DB500610645 /* Storyboards */ = {
+		3B38229E27346DB500610645 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				3B3822A327346F1300610645 /* LaunchScreen.storyboard */,
 				3BF1ABE2272ACFDA002EB459 /* Main.storyboard */,
 			);
-			path = Storyboards;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
-		3B38229F27346DC700610645 /* View Controllers */ = {
+		3B38229F27346DC700610645 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				3B3822AC2734729D00610645 /* LoginViewController.swift */,
 			);
-			path = "View Controllers";
+			path = Scenes;
 			sourceTree = "<group>";
 		};
-		3B3822A027346DD700610645 /* Custom Views */ = {
+		3B3822A027346DD700610645 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3B3822AE273472C900610645 /* LoginView.swift */,
 				3B3822B22734732F00610645 /* TransitionAnimator */,
 			);
-			path = "Custom Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3B3822A127346DE700610645 /* Resources */ = {
@@ -210,12 +210,78 @@
 		3B8E3F34274D2D07003DCC48 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				3B8E3F35274D2D40003DCC48 /* AuthAPI.swift */,
-				3B8E3F39274FEE41003DCC48 /* FindAPI.swift */,
-				3B8E3F37274FD41B003DCC48 /* Moya+Extensions.swift */,
 				3BE1A6F02762263A00DEBE8E /* APIProviders.swift */,
+				3B8E3F37274FD41B003DCC48 /* Moya+Extensions.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		3BE1A6F3276249BB00DEBE8E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1A6FC27624BF900DEBE8E /* Views */,
+				3B38229E27346DB500610645 /* Scenes */,
+				3B38229D27346DA300610645 /* Models */,
+				3B8E3F33274D2CF1003DCC48 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3BE1A6F4276249D600DEBE8E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				3B38229F27346DC700610645 /* Scenes */,
+				3B3822A027346DD700610645 /* Views */,
+				3BE1A6F6276249F200DEBE8E /* Services */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		3BE1A6F5276249E000DEBE8E /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				3BE1A6FB27624A8700DEBE8E /* Services */,
+				3BE1A6FA27624A5C00DEBE8E /* Scenes */,
+				3BE1A6F827624A4C00DEBE8E /* Views */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		3BE1A6F6276249F200DEBE8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E3F35274D2D40003DCC48 /* AuthAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3BE1A6F827624A4C00DEBE8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BE1A6FA27624A5C00DEBE8E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3BE1A6FB27624A8700DEBE8E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3B8E3F39274FEE41003DCC48 /* FindAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3BE1A6FC27624BF900DEBE8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		3BF1ABD0272ACFDA002EB459 = {
@@ -243,11 +309,9 @@
 		3BF1ABDB272ACFDA002EB459 /* FindMyMasters */ = {
 			isa = PBXGroup;
 			children = (
-				3B8E3F33274D2CF1003DCC48 /* Services */,
-				3B38229E27346DB500610645 /* Storyboards */,
-				3B38229F27346DC700610645 /* View Controllers */,
-				3B38229D27346DA300610645 /* Models */,
-				3B3822A027346DD700610645 /* Custom Views */,
+				3BE1A6F3276249BB00DEBE8E /* Core */,
+				3BE1A6F4276249D600DEBE8E /* Auth */,
+				3BE1A6F5276249E000DEBE8E /* Find */,
 				3B3822A127346DE700610645 /* Resources */,
 				3B3822A227346DEF00610645 /* Supporting Files */,
 				3BF1ABE0272ACFDA002EB459 /* ViewController.swift */,

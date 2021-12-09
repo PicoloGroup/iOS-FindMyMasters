@@ -41,10 +41,17 @@ class LoginView: UIView {
     lazy var createAccountButton: UIButton = {
         let button = UIButton()
         button.setTitle("Create Account", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15)
-        button.setTitleColor(.secondaryLabel, for: .normal)
-        button.setTitleColor(UIColor.secondaryLabel.highlighted, for: .highlighted)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
+        button.setTitleColor(Asset.Colors.primaryColor.color, for: .normal)
+        button.setTitleColor(.highlightedLabel, for: .highlighted)
+
+        button.layer.borderColor = Asset.Colors.primaryColor.color.cgColor
+        button.layer.borderWidth = 1
+
+        button.clipsToBounds = true
+        button.layer.cornerRadius = 13
         return button
+
     }()
 
     convenience init() {
@@ -85,16 +92,16 @@ class LoginView: UIView {
         NSLayoutConstraint.activate([
             emailTextField.leadingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.leadingAnchor,
-                constant: 15
+                constant: 20
             ),
             emailTextField.trailingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.trailingAnchor,
-                constant: -15
+                constant: -20
             ),
             emailTextField.heightAnchor.constraint(equalToConstant: 45),
         ])
 
-        let constant: CGFloat = UIDevice.current.orientation.isLandscape ? 15 : 50
+        let constant: CGFloat = UIDevice.current.orientation.isLandscape ? 20 : 50
         emailTopConstraint = emailTextField.topAnchor.constraint(
             equalTo: safeAreaLayoutGuide.topAnchor,
             constant: constant
@@ -109,11 +116,11 @@ class LoginView: UIView {
         NSLayoutConstraint.activate([
             passwordTextField.leadingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.leadingAnchor,
-                constant: 15
+                constant: 20
             ),
             passwordTextField.trailingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.trailingAnchor,
-                constant: -15
+                constant: -20
             ),
             passwordTextField.heightAnchor.constraint(equalToConstant: 45),
         ])
@@ -133,11 +140,11 @@ class LoginView: UIView {
         NSLayoutConstraint.activate([
             loginButton.leadingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.leadingAnchor,
-                constant: 15
+                constant: 20
             ),
             loginButton.trailingAnchor.constraint(
                 equalTo: safeAreaLayoutGuide.trailingAnchor,
-                constant: -15
+                constant: -20
             ),
             loginButton.heightAnchor.constraint(equalToConstant: 44),
             loginButton.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 5),
@@ -148,8 +155,16 @@ class LoginView: UIView {
         addSubview(createAccountButton)
         createAccountButton.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            createAccountButton.centerXAnchor.constraint(equalTo: centerXAnchor),
-            createAccountButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 5),
+            createAccountButton.leadingAnchor.constraint(
+                equalTo: safeAreaLayoutGuide.leadingAnchor,
+                constant: 20
+            ),
+            createAccountButton.trailingAnchor.constraint(
+                equalTo: safeAreaLayoutGuide.trailingAnchor,
+                constant: -20
+            ),
+            createAccountButton.heightAnchor.constraint(equalToConstant: 44),
+            createAccountButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 8),
         ])
     }
 

@@ -22,6 +22,7 @@
 		3B8E3F38274FD41B003DCC48 /* Moya+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E3F37274FD41B003DCC48 /* Moya+Extensions.swift */; };
 		3B8E3F3A274FEE41003DCC48 /* FindAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E3F39274FEE41003DCC48 /* FindAPI.swift */; };
 		3BE1A6F12762263B00DEBE8E /* APIProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1A6F02762263A00DEBE8E /* APIProviders.swift */; };
+		3BE1A70027624EE600DEBE8E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1A6FF27624EE600DEBE8E /* Logger.swift */; };
 		3BF1ABDD272ACFDA002EB459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */; };
 		3BF1ABDF272ACFDA002EB459 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */; };
 		3BF1ABE1272ACFDA002EB459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF1ABE0272ACFDA002EB459 /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 		3B8E3F37274FD41B003DCC48 /* Moya+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Extensions.swift"; sourceTree = "<group>"; };
 		3B8E3F39274FEE41003DCC48 /* FindAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAPI.swift; sourceTree = "<group>"; };
 		3BE1A6F02762263A00DEBE8E /* APIProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviders.swift; sourceTree = "<group>"; };
+		3BE1A6FF27624EE600DEBE8E /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		3BF1ABD9272ACFDA002EB459 /* FindMyMasters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyMasters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF1ABDC272ACFDA002EB459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF1ABDE272ACFDA002EB459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 		3B8E3F33274D2CF1003DCC48 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3BE1A6FF27624EE600DEBE8E /* Logger.swift */,
 				3B8E3F34274D2D07003DCC48 /* Networking */,
 			);
 			path = Services;
@@ -529,6 +532,7 @@
 				3BE1A6F12762263B00DEBE8E /* APIProviders.swift in Sources */,
 				3B3822B6273473F400610645 /* LoginDelegate.swift in Sources */,
 				3B3822AD2734729D00610645 /* LoginViewController.swift in Sources */,
+				3BE1A70027624EE600DEBE8E /* Logger.swift in Sources */,
 				3B8E3F3A274FEE41003DCC48 /* FindAPI.swift in Sources */,
 				3BF1ABDD272ACFDA002EB459 /* AppDelegate.swift in Sources */,
 				3B3822AF273472C900610645 /* LoginView.swift in Sources */,

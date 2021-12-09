@@ -3,6 +3,7 @@
 
 // swiftlint:disable sorted_imports
 import Foundation
+import AnimatedTabBar
 import UIKit
 
 // swiftlint:disable superfluous_disable_command
@@ -12,6 +13,25 @@ import UIKit
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardScene {
+  internal enum City: StoryboardType {
+    internal static let storyboardName = "City"
+
+    internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: City.self)
+
+    internal static let cityListViewController = SceneType<CityListViewController>(storyboard: City.self, identifier: "CityListViewController")
+  }
+  internal enum CityDetail: StoryboardType {
+    internal static let storyboardName = "CityDetail"
+
+    internal static let cityDetailViewController = SceneType<CityDetailViewController>(storyboard: CityDetail.self, identifier: "CityDetailViewController")
+  }
+  internal enum Find: StoryboardType {
+    internal static let storyboardName = "Find"
+
+    internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: Find.self)
+
+    internal static let exploreViewController = SceneType<ExploreViewController>(storyboard: Find.self, identifier: "ExploreViewController")
+  }
   internal enum LaunchScreen: StoryboardType {
     internal static let storyboardName = "LaunchScreen"
 
@@ -20,7 +40,14 @@ internal enum StoryboardScene {
   internal enum Main: StoryboardType {
     internal static let storyboardName = "Main"
 
-    internal static let initialScene = InitialSceneType<ViewController>(storyboard: Main.self)
+    internal static let initialScene = InitialSceneType<AnimatedTabBar.AnimatedTabBarController>(storyboard: Main.self)
+  }
+  internal enum ProgramDetail: StoryboardType {
+    internal static let storyboardName = "ProgramDetail"
+
+    internal static let initialScene = InitialSceneType<ProgramDetailViewController>(storyboard: ProgramDetail.self)
+
+    internal static let programDetailViewController = SceneType<ProgramDetailViewController>(storyboard: ProgramDetail.self, identifier: "ProgramDetailViewController")
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

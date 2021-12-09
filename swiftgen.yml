@@ -36,7 +36,7 @@ xcassets:
 ##    and SwiftGen will recursively find all `*.storyboard` and `*.xib` files in there.
 ib:
   inputs:
-    - Storyboards
+    - .
   outputs:
     - templateName: scenes-swift5
       output: IB-Scenes+Generated.swift

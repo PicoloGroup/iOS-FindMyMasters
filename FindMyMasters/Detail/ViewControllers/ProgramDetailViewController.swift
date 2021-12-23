@@ -53,7 +53,7 @@ class ProgramDetailViewController: UIViewController {
         universityNameLabel.text = model.universityName
         programNameLabel.text = model.programName
 
-        deadlineLabel.text = formatTimestamp(model.deadline)
+        deadlineLabel.text = formatTimestamp(model.deadline ?? "")
         languageLabel.text = model.language
         tutionLabel.text = model.tution
         durationLabel.text = model.duration
@@ -61,7 +61,7 @@ class ProgramDetailViewController: UIViewController {
         cityNameLabel.text = model.cityName
         countryNameLabel.text = model.countryName
 
-        requirementsTextField.attributedText = model.academicRequirement.htmlToAttributedString
+        requirementsTextField.attributedText = nil
     }
 
     @IBAction func presentCityDetails(_ sender: Any) {
@@ -73,7 +73,7 @@ class ProgramDetailViewController: UIViewController {
             return
         }
 
-        let cityDetailVC = StoryboardScene.City.cityDetailViewController.instantiate()
+        let cityDetailVC = StoryboardScene.CityDetail.cityDetailViewController.instantiate()
         cityDetailVC.city = city
         present(cityDetailVC, animated: true)
     }

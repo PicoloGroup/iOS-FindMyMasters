@@ -24,7 +24,7 @@ class ExploreViewController: UIViewController {
         ]
 
         let pagingViewController = PagingViewController(viewControllers: viewControllers)
-        pagingViewController.menuItemSize = .sizeToFit(minWidth: 44, height: 55)
+        pagingViewController.menuItemSize = PagingMenuItemSize.sizeToFit(minWidth: 44, height: 55)
         pagingViewController.indicatorColor = Asset.Colors.primaryColor.color
         pagingViewController.selectedTextColor = Asset.Colors.primaryColor.color
         // Make sure you add the PagingViewController as a child view

@@ -87,21 +87,20 @@ class ProgramPageViewController: UIViewController {
 
     func filterContentForSearchText(
         _ searchText: String,
-        category: DataType.CodingKeys? = .name
-    ) {
+        category: DataType.CodingKeys? = .name) {
         filteredData = dataSource?.filter { (data: DataType) -> Bool in
             switch category {
-            case .university:
-                return data.university.lowercased().contains(searchText.lowercased())
+            case .universityId:
+                return data.universityId.lowercased().contains(searchText.lowercased())
 
             case .name:
                 return data.name.lowercased().contains(searchText.lowercased())
 
             case .duration:
-                return data.duration.lowercased().contains(searchText.lowercased())
+                return data.duration?.lowercased().contains(searchText.lowercased()) ?? false
 
             case .language:
-                return data.language.lowercased().contains(searchText.lowercased())
+                return data.language?.lowercased().contains(searchText.lowercased()) ?? false
 
             default:
                 return false
@@ -149,7 +148,7 @@ extension ProgramPageViewController: UITableViewDataSource {
             data = dataSource?[indexPath.row]
         }
         cell.textLabel?.text = data?.name
-        cell.detailTextLabel?.text = data?.university
+        cell.detailTextLabel?.text = data?.universityId
         return cell
     }
 }
@@ -165,7 +164,7 @@ extension ProgramPageViewController: UITableViewDelegate {
         }
 
         guard let data = data,
-            let detail = DatabaseService.shared.getProgramDetails(name: data.name, university: data.university)
+              let detail = DatabaseService.shared.getProgramDetails(name: data.name, university: data.university)
         else { return }
 
         let detailViewController = StoryboardScene.ProgramDetail.programDetailViewController.instantiate()

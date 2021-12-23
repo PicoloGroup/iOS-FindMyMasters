@@ -1,8 +1,8 @@
 //
 //  CityListViewController.swift
-//  MastersPortal
+//  FindMyMasters
 //
-//  Created by HASAN CAN on 7/6/21.
+//  Created by Hasan Can Aslan on 25.11.2021.
 //
 
 import UIKit

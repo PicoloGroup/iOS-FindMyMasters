@@ -74,6 +74,7 @@ class LoginViewController: UIViewController {
             switch result {
             case let .success(response):
                 Log.debug(response)
+
             case let .failure(response):
                 Log.debug(response)
             }
@@ -112,8 +113,7 @@ class LoginViewController: UIViewController {
     }
 
     override func viewWillTransition(to size: CGSize,
-                                     with coordinator: UIViewControllerTransitionCoordinator)
-    {
+                                     with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         loginView.emailTopConstraint.constant = UIDevice.current.orientation.isLandscape ? 15 : 50
         loginView.passwordTopConstraint.constant = UIDevice.current.orientation.isLandscape ? 5 : 20

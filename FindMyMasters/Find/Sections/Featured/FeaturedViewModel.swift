@@ -37,7 +37,7 @@ class FeaturedViewModel: NSObject {
 
         return [
             FeaturedSection(popularSection),
-            FeaturedSection(newSection),
+            FeaturedSection(newSection)
         ]
     }
 

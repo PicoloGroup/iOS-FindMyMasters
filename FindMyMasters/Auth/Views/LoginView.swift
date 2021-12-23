@@ -51,7 +51,6 @@ class LoginView: UIView {
         button.clipsToBounds = true
         button.layer.cornerRadius = 13
         return button
-
     }()
 
     convenience init() {
@@ -81,7 +80,7 @@ class LoginView: UIView {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: -55),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 55),
             imageView.widthAnchor.constraint(equalToConstant: 325),
-            imageView.heightAnchor.constraint(equalToConstant: 325),
+            imageView.heightAnchor.constraint(equalToConstant: 325)
         ])
     }
 
@@ -98,7 +97,7 @@ class LoginView: UIView {
                 equalTo: safeAreaLayoutGuide.trailingAnchor,
                 constant: -20
             ),
-            emailTextField.heightAnchor.constraint(equalToConstant: 45),
+            emailTextField.heightAnchor.constraint(equalToConstant: 45)
         ])
 
         let constant: CGFloat = UIDevice.current.orientation.isLandscape ? 20 : 50
@@ -122,7 +121,7 @@ class LoginView: UIView {
                 equalTo: safeAreaLayoutGuide.trailingAnchor,
                 constant: -20
             ),
-            passwordTextField.heightAnchor.constraint(equalToConstant: 45),
+            passwordTextField.heightAnchor.constraint(equalToConstant: 45)
         ])
 
         let constant: CGFloat = UIDevice.current.orientation.isLandscape ? 5 : 20
@@ -147,7 +146,7 @@ class LoginView: UIView {
                 constant: -20
             ),
             loginButton.heightAnchor.constraint(equalToConstant: 44),
-            loginButton.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 5),
+            loginButton.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 5)
         ])
     }
 
@@ -164,7 +163,7 @@ class LoginView: UIView {
                 constant: -20
             ),
             createAccountButton.heightAnchor.constraint(equalToConstant: 44),
-            createAccountButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 8),
+            createAccountButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 8)
         ])
     }
 

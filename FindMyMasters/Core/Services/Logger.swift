@@ -5,7 +5,6 @@
 //  Created by Hasan Can Aslan on 09.12.2021.
 //
 
-
 import Foundation
 
 // MARK: - LogEvent

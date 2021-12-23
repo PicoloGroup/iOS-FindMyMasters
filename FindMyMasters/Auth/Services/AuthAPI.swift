@@ -36,6 +36,7 @@ extension AuthAPI: TargetType {
         switch self {
         case let .login(email, password):
             return .requestParameters(parameters: ["email": email, "password": password], encoding: URLEncoding.default)
+
         case let .signup(email, password):
             return .requestParameters(parameters: ["email": email, "password": password], encoding: URLEncoding.default)
         }
@@ -47,5 +48,3 @@ extension AuthAPI: TargetType {
 
     public var headers: [String: String]? { nil }
 }
-
-

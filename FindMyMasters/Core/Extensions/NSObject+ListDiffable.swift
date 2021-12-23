@@ -5,7 +5,6 @@
 //  Created by Hasan Can Aslan on 20.12.2021.
 //
 
-
 import Foundation
 import IGListKit
 

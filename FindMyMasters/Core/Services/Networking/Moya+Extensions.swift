@@ -15,7 +15,6 @@ private extension String {
     }
 }
 
-
 // MARK: - Response Handlers
 extension Moya.Response {
     func mapNSArray() throws -> NSArray {

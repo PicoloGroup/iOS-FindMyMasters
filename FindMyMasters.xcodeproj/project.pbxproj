@@ -50,6 +50,7 @@
 		3B79637C2774DE3C004BC30C /* FeaturedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B79637B2774DE3C004BC30C /* FeaturedViewModel.swift */; };
 		3B79637E2774DE43004BC30C /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B79637D2774DE43004BC30C /* CountriesViewModel.swift */; };
 		3B79638327751D87004BC30C /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B79638227751D87004BC30C /* Student.swift */; };
+		3B79638827752356004BC30C /* ProgramDetailDataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B79638727752356004BC30C /* ProgramDetailDataContainer.swift */; };
 		3B8E3F36274D2D40003DCC48 /* AuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E3F35274D2D40003DCC48 /* AuthAPI.swift */; };
 		3B8E3F38274FD41B003DCC48 /* Moya+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E3F37274FD41B003DCC48 /* Moya+Extensions.swift */; };
 		3B8E3F3A274FEE41003DCC48 /* FindAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8E3F39274FEE41003DCC48 /* FindAPI.swift */; };
@@ -144,6 +145,7 @@
 		3B79637B2774DE3C004BC30C /* FeaturedViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeaturedViewModel.swift; sourceTree = "<group>"; };
 		3B79637D2774DE43004BC30C /* CountriesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 		3B79638227751D87004BC30C /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		3B79638727752356004BC30C /* ProgramDetailDataContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramDetailDataContainer.swift; sourceTree = "<group>"; };
 		3B8E3F35274D2D40003DCC48 /* AuthAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPI.swift; sourceTree = "<group>"; };
 		3B8E3F37274FD41B003DCC48 /* Moya+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Extensions.swift"; sourceTree = "<group>"; };
 		3B8E3F39274FEE41003DCC48 /* FindAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindAPI.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				3B79633D2774DA8C004BC30C /* University.swift */,
 				3B79633B2774DA79004BC30C /* City.swift */,
 				3B79638227751D87004BC30C /* Student.swift */,
+				3B79638727752356004BC30C /* ProgramDetailDataContainer.swift */,
 				3BE1A70127624F3200DEBE8E /* UserDefaultsBacked.swift */,
 				3B3822B5273473F400610645 /* LoginDelegate.swift */,
 				3BE1A72A2762B69400DEBE8E /* CollectionSection.swift */,
@@ -837,6 +840,7 @@
 				3B7963662774DCCE004BC30C /* CountriesSection.swift in Sources */,
 				3B79637A2774DE26004BC30C /* SectionViewModel.swift in Sources */,
 				3BE1A70027624EE600DEBE8E /* Logger.swift in Sources */,
+				3B79638827752356004BC30C /* ProgramDetailDataContainer.swift in Sources */,
 				3B79635E2774DCCE004BC30C /* SectionTitleSection.swift in Sources */,
 				3B8E3F3A274FEE41003DCC48 /* FindAPI.swift in Sources */,
 				3B7963482774DBA2004BC30C /* UIView+Constraints.swift in Sources */,

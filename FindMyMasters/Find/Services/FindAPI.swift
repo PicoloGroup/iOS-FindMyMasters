@@ -42,6 +42,7 @@ extension FindAPI: TargetType, AccessTokenAuthorizable {
         switch self {
         case let .login(email, password):
             return .requestParameters(parameters: ["email": email, "password": password], encoding: URLEncoding.default)
+
         case let .signup(email, password):
             return .requestParameters(parameters: ["email": email, "password": password], encoding: URLEncoding.default)
         }

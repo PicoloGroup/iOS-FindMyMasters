@@ -122,7 +122,7 @@ extension UINavigationBar: UserDisplayable {
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15),
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -5),
             imageView.heightAnchor.constraint(equalToConstant: length),
-            imageView.widthAnchor.constraint(equalToConstant: length),
+            imageView.widthAnchor.constraint(equalToConstant: length)
         ])
     }
 }
@@ -133,8 +133,7 @@ extension UITabBarController: UITabBarControllerDelegate {
     public func tabBarController(_ tabBarController: UITabBarController,
                                  animationControllerForTransitionFrom fromVC: UIViewController,
                                  to toVC: UIViewController)
-        -> UIViewControllerAnimatedTransitioning?
-    {
+        -> UIViewControllerAnimatedTransitioning? {
         let fromIndex = tabBarController.viewControllers!.firstIndex(of: fromVC)!
         let toIndex = tabBarController.viewControllers!.firstIndex(of: toVC)!
 

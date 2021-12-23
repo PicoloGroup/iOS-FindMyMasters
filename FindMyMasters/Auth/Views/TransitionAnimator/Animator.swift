@@ -21,8 +21,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
     }
 
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?)
-        -> TimeInterval
-    {
+        -> TimeInterval {
         return transitionDuration as TimeInterval
     }
 
@@ -49,7 +48,6 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         UIView.animate(withDuration: transitionDuration, animations: {
             fromView.frame = fromViewFinalFrame
             toView.frame = container.frame
-
         }) { _ in
             fromView.removeFromSuperview()
             transitionContext.completeTransition(true)

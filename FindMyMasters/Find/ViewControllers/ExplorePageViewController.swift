@@ -45,7 +45,7 @@ class ExplorePageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.configureNavigationBar()
-        navigationItem.title = L10n.Explore.Navigation.title
+        navigationItem.title = "Explore"
 
         addCollectionView()
 

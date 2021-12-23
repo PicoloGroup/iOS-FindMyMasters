@@ -31,8 +31,8 @@ class Student: Codable {
     enum CodingKeys: String, CodingKey, CaseIterable {
         case id
         case email
-        case firstName: "firstname"
-        case lastName: "lastname"
+        case firstName = "firstname"
+        case lastName = "lastname"
         case image
         case birthDate
         case userId

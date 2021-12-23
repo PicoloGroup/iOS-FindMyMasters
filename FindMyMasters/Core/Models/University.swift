@@ -19,7 +19,7 @@ class University: Codable {
         name: String,
         image: String?,
         rank: String?,
-        cityId: String?,
+        cityId: String?
     ) {
         self.id = id
         self.name = name

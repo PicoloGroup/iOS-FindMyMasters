@@ -18,10 +18,10 @@ class Program: Codable {
     var schedule: String?
     var field: String?
     var url: String?
-    var tuitionAmount: Float?
-    var tuitionCurrency: String?
+    var tutionAmount: Float?
+    var tutionCurrency: String?
 
-    init(id: Int, universityId: String, name: String, duration: String? = nil, language: String? = nil, deadline: String? = nil, mode: String? = nil, schedule: String? = nil, field: String? = nil, url: String? = nil, tuitionAmount: Float? = nil, tuitionCurrency: String? = nil) {
+    init(id: Int, universityId: String, name: String, duration: String? = nil, language: String? = nil, deadline: String? = nil, mode: String? = nil, schedule: String? = nil, field: String? = nil, url: String? = nil, tutionAmount: Float? = nil, tutionCurrency: String? = nil) {
         self.id = id
         self.universityId = universityId
         self.name = name
@@ -32,8 +32,8 @@ class Program: Codable {
         self.schedule = schedule
         self.field = field
         self.url = url
-        self.tuitionAmount = tuitionAmount
-        self.tuitionCurrency = tuitionCurrency
+        self.tutionAmount = tutionAmount
+        self.tutionCurrency = tutionCurrency
     }
 
     enum CodingKeys: String, CodingKey, CaseIterable {
@@ -47,8 +47,8 @@ class Program: Codable {
         case schedule
         case field
         case url
-        case tuitionAmount
-        case tuitionCurrency
+        case tutionAmount = "tution_amount"
+        case tutionCurrency = "tution_currency"
     }
 }
 

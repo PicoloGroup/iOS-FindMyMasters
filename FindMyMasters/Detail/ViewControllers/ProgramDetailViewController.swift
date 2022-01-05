@@ -65,17 +65,18 @@ class ProgramDetailViewController: UIViewController {
     }
 
     @IBAction func presentCityDetails(_ sender: Any) {
-        guard let city = DatabaseService.shared.findCity(name: model.cityName, country: model.countryName) else {
-            let alert = UIAlertController(title: "Couldn't find city.", message: nil, preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .cancel)
-            alert.addAction(action)
-            present(alert, animated: true)
-            return
-        }
-
-        let cityDetailVC = StoryboardScene.CityDetail.cityDetailViewController.instantiate()
-        cityDetailVC.city = city
-        present(cityDetailVC, animated: true)
+        //        TODO: CONNECT DATABASE
+//        guard let city = DatabaseService.shared.findCity(name: model.cityName, country: model.countryName) else {
+//            let alert = UIAlertController(title: "Couldn't find city.", message: nil, preferredStyle: .alert)
+//            let action = UIAlertAction(title: "OK", style: .cancel)
+//            alert.addAction(action)
+//            present(alert, animated: true)
+//            return
+//        }
+//
+//        let cityDetailVC = StoryboardScene.CityDetail.cityDetailViewController.instantiate()
+//        cityDetailVC.city = city
+//        present(cityDetailVC, animated: true)
     }
 
     @IBAction func applyToProgram(_ sender: Any) {}

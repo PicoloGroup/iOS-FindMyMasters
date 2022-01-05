@@ -48,15 +48,14 @@ extension FeaturedSectionController: ListBindingSectionControllerDataSource {
 extension FeaturedSectionController: ListBindingSectionControllerSelectionDelegate {
     func sectionController(_: ListBindingSectionController<ListDiffable>, didSelectItemAt index: Int, viewModel _: Any) {
         guard let item = viewModel?.cells[index] else { return }
-        print(item.title)
-        print(item.subtitle)
-        print(DatabaseService.shared.getProgramDetails(name: item.title, university: item.subtitle))
-        guard let detail = DatabaseService.shared.getProgramDetails(name: item.title, university: item.subtitle)
-        else { return }
-        print(detail)
-        let detailViewController = StoryboardScene.ProgramDetail.programDetailViewController.instantiate()
-        detailViewController.model = detail
-        viewController?.present(detailViewController, animated: true)
+
+        //        TODO: CONNECT DATABASE
+//        guard let detail = DatabaseService.shared.getProgramDetails(name: item.title, university: item.subtitle)
+//        else { return }
+//
+//        let detailViewController = StoryboardScene.ProgramDetail.programDetailViewController.instantiate()
+//        detailViewController.model = detail
+//        viewController?.present(detailViewController, animated: true)
     }
 
     func sectionController(_: ListBindingSectionController<ListDiffable>, didDeselectItemAt _: Int, viewModel _: Any) {}

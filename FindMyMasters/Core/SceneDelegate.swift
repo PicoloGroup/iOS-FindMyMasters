@@ -10,11 +10,24 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
 
-    lazy var loginNavController: UINavigationController = {
-        let navController = UINavigationController(rootViewController: LoginViewController())
-        navController.view.backgroundColor = .systemBackground
-        return navController
+    lazy var authNavController: UINavigationController = {
+      let navController = UINavigationController(rootViewController: AuthViewController())
+      navController.view.backgroundColor = .systemBackground
+      return navController
     }()
+
+    lazy var userNavController: UINavigationController = {
+      let navController = UINavigationController(rootViewController: UserViewController())
+      navController.view.backgroundColor = .systemBackground
+      return navController
+    }()
+
+    //
+//    lazy var loginNavController: UINavigationController = {
+//        let navController = UINavigationController(rootViewController: LoginViewController())
+//        navController.view.backgroundColor = .systemBackground
+//        return navController
+//    }()
 
     lazy var tabBarController: UITabBarController = {
         let tabBarController = UITabBarController()
@@ -30,7 +43,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         configureControllers()
 
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = loginNavController
+        window?.rootViewController = authNavController
         window?.makeKeyAndVisible()
     }
 

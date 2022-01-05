@@ -16,7 +16,9 @@ class ExploreViewController: UIViewController {
 
         let countriesViewModel = SimpleListAdapterDataSource(CountriesViewModel().sections)
         let featuredViewModel = SimpleListAdapterDataSource(FeaturedViewModel().sections)
-        let programsViewModel = DatabaseService.shared.getAllPrograms()
+        //        TODO: CONNECT DATABASE
+//        let programsViewModel = DatabaseService.shared.getAllPrograms()
+        let programsViewModel = [Program]()
         let viewControllers = [
             ExplorePageViewController(title: "Featured", dataSource: featuredViewModel),
             ExplorePageViewController(title: "Countries", dataSource: countriesViewModel),

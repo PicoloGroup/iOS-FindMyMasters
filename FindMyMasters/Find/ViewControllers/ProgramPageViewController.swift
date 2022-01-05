@@ -163,13 +163,16 @@ extension ProgramPageViewController: UITableViewDelegate {
             data = dataSource?[indexPath.row]
         }
 
-        guard let data = data,
-              let detail = DatabaseService.shared.getProgramDetails(name: data.name, university: data.university)
-        else { return }
+        //        TODO: CONNECT DATABASE
+//        guard let data = data,
+//              let detail = DatabaseService.shared.getProgramDetails(name: data.name, university: data.university)
+//        else { return }
 
-        let detailViewController = StoryboardScene.ProgramDetail.programDetailViewController.instantiate()
-        detailViewController.model = detail
-        present(detailViewController, animated: true)
+        return
+
+//        let detailViewController = StoryboardScene.ProgramDetail.programDetailViewController.instantiate()
+//        detailViewController.model = detail
+//        present(detailViewController, animated: true)
     }
 }
 

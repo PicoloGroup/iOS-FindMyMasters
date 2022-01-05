@@ -6,15 +6,31 @@ target 'FindMyMasters' do
   use_frameworks!
 
   # Pods for Find My Masters
+
+  pod 'SQLite.swift'
+
+  ## Firebase
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  
+  ### For Email Link/Passwordless Auth
+  pod 'Firebase/DynamicLinks'
+
+  ## Pod for Sign in with Google
+  pod 'GoogleSignIn'
+
+  ## Pod for Sign in with Facebook
+  pod 'FBSDKLoginKit'
+
   # autolayout
   pod 'SnapKit'
 
   # activity indicator
-  #pod 'JGProgressHUD'
+  pod 'JGProgressHUD'
   pod 'PKHUD'
 
   # custom UI
-  #pod 'Eureka'
+  pod 'Eureka'
   pod 'FlagKit'
   pod 'Parchment'
 

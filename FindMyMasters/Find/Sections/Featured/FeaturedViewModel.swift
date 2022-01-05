@@ -12,14 +12,15 @@ import IGListKit
 
 class FeaturedViewModel: NSObject {
     func getFeaturedPrograms() -> [FeaturedSection] {
-        let programs = DatabaseService.shared.getAllPrograms()
-        let filteredPrograms = programs?.filter { $0.university == "Koc University" }
+//        TODO: CONNECT DATABASE
+        let programs: [ProgramDetailDataContainer]? = [ProgramDetailDataContainer]()
+        let filteredPrograms = programs?.filter { $0.universityName == "Koc University" }
 
         let popular = filteredPrograms?.compactMap { program in
             FeaturedItemViewModel(
                 caption: "POPULAR",
-                title: program.name,
-                subtitle: program.university,
+                title: program.programName,
+                subtitle: program.universityName,
                 thumbnail: getRandomPhoto())
         }
 
@@ -28,8 +29,8 @@ class FeaturedViewModel: NSObject {
         let new = filteredPrograms?.compactMap { program in
             FeaturedItemViewModel(
                 caption: "NEW",
-                title: program.name,
-                subtitle: program.university,
+                title: program.programName,
+                subtitle: program.universityName,
                 thumbnail: getRandomPhoto())
         }
 

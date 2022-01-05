@@ -13,6 +13,11 @@ import UIKit
 
 // swiftlint:disable explicit_type_interface identifier_name line_length type_body_length type_name
 internal enum StoryboardScene {
+  internal enum Apply: StoryboardType {
+    internal static let storyboardName = "Apply"
+
+    internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: Apply.self)
+  }
   internal enum City: StoryboardType {
     internal static let storyboardName = "City"
 

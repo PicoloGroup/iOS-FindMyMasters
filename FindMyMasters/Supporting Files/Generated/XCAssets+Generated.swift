@@ -25,6 +25,15 @@ internal enum Asset {
     internal static let appIconNoBackground = ImageAsset(name: "app-icon-no-background")
     internal static let appIconRounded = ImageAsset(name: "app-icon-rounded")
   }
+  internal enum AuthProviderIcons {
+    internal static let apple = ImageAsset(name: "Apple")
+    internal static let facebook = ImageAsset(name: "Facebook")
+    internal static let gitHub = ImageAsset(name: "GitHub")
+    internal static let google = ImageAsset(name: "Google")
+    internal static let microsoft = ImageAsset(name: "Microsoft")
+    internal static let twitter = ImageAsset(name: "Twitter")
+    internal static let yahoo = ImageAsset(name: "Yahoo")
+  }
   internal enum Colors {
     internal static let accentColor = ColorAsset(name: "AccentColor")
     internal static let primaryColor = ColorAsset(name: "PrimaryColor")

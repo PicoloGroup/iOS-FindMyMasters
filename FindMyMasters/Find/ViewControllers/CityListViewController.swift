@@ -25,12 +25,15 @@ class CityListViewController: UIViewController {
     }
 
     func loadCities(in country: String) {
-        cities = DatabaseService.shared.getAllCitiesInCountry(country: country)
+        //        TODO: CONNECT DATABASE
+//        cities = DatabaseService.shared.getAllCitiesInCountry(country: country)
         tableView.reloadData()
     }
 
     func loadPrograms(in city: City) -> [Program]? {
-        return DatabaseService.shared.getAllProgramsInCity(name: city.name, country: city.country)
+        //        TODO: CONNECT DATABASE
+//        return DatabaseService.shared.getAllProgramsInCity(name: city.name, country: city.country)
+        return nil
     }
 }
 
